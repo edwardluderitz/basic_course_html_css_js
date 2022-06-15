@@ -15,7 +15,7 @@ function calcular(event){
         textResult.innerHTML = "Compensa usar Gasolina";
     }
 
-    calculoResult.innerHTML = calculo;
+    calculoResult.innerHTML = "Resultado do Cálculo: "+ calculo.toFixed(1);
 
     contentResult.classList.remove("hide");
 }
