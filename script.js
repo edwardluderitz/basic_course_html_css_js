@@ -3,12 +3,19 @@ function calcular(event){
 
     let alcoolInput = document.getElementById("alcool").value;
     let gasolinaInput = document.getElementById("gasolina").value;
+    let contentResult = document.getElementById("content-result");
+    let textResult = document.getElementById("text-result");
+    let calculoResult = document.getElementById("calculo-result");
 
-    let multiplicarGasolina = gasolinaInput * 0.7;
+    let calculo = alcoolInput / gasolinaInput;
 
-    if(multiplicarGasolina > alcoolInput){
-        alert("O Alcool compensa mais que a Gasolina" + multiplicarGasolina);
+    if(calculo < 0.7){
+        textResult.innerHTML = "Compensa usar Álcool";
     } else {
-        alert("A Gasolina compensa mais que o Alcool" + multiplicarGasolina);
+        textResult.innerHTML = "Compensa usar Gasolina";
     }
+
+    calculoResult.innerHTML = calculo;
+
+    contentResult.classList.remove("hide");
 }
