@@ -73,6 +73,10 @@ body{
     transition: transform 0.8s;
 }
 
+.hide{
+    display: none;
+}
+
 .result:hover{
     transform: scale(1.1);
 }

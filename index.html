@@ -7,6 +7,7 @@
     <meta name="keywords" content="Calculadora Álcool e Gasolina">
     <title>Calculadora Álcool e Gasolina</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
 
@@ -14,9 +15,10 @@
         <img class="logo" src="assets/logo.png" alt="Logo da Calculadora Gasolina e Álcool">
         <h1 class="title">Qual a melhor opção?</h1>
 
-        <form class="form" action="">
+        <form onsubmit="calcular(event)" class="form" action="">
             <label> Álcool (Preço por litro)</label>
             <input
+            id="alcool"
             class="input" 
             type="number"
             placeholder="4.90"
@@ -26,18 +28,19 @@
             >
 
             <label> Gasolina (Preço por litro)</label>
-            <input 
+            <input
+            id="gasolina" 
             class="input" 
             type="number"
-            placeholder="4.90"
+            placeholder="6.90"
             min="1"
             step="0.1"
             required
             >
-            <input class="button" type="submit" value="Calcular">
+            <input class="button" type="submit" value="Calcular" f>
         </form>
 
-        <section class="result">
+        <section class="result hide">
             <span id="text-result">Compensa usar Álcool</span>
         </section>
 
