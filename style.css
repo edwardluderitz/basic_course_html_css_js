@@ -115,3 +115,28 @@ body{
 .info:hover .tooltip{
     display: inline;
 }
+
+.sobre{
+    background-color: rgb(15,15,15);
+    position: fixed;
+    border-radius: 6px;
+    color: #FFF;
+    max-width: 720px;
+    margin: 5%;
+    padding: 10px 10px;
+    border: 2px solid #696969;
+    text-align: justify;
+}
+
+.inform-text{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.img-fechar{
+    float: right;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}

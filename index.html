@@ -10,7 +10,6 @@
     <script src="script.js"></script>
 </head>
 <body>
-
     <main class="container">
         <img class="logo" src="assets/logo.png" alt="Logo da Calculadora Gasolina e Álcool">
         <h1 class="title">Qual a melhor opção?</h1>
@@ -45,14 +44,18 @@
             <span id = "calculo-result"></span>
         </section>
 
+        <div id="sobre-result" class="sobre hide">
+            <img src="assets/xbutton.png" alt="Botão de fechar" class="img-fechar" onmousedown="infosobresair()">
+            <h1 class="inform-text" id="textfirst"></h1>
+            <span id="textinfocalc"></span>
+        </div>
     </main>
 
-    <div class="info">
+    <div class="info" onmousedown="infosobre()">
         <span class="tooltip">Veja como é feito o cálculo</span>
         <a href="#">
             <img class="info-img" src="/assets/info.png" alt="Como é feito o cálculo">
         </a>
     </div>
-
 </body>
 </html>
